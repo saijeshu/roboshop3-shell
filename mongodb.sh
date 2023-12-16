@@ -8,7 +8,7 @@ Y="\e[33m"
 N="\e[0m"
 
 TIMESTAMP=$(date +%F-%H-%M-%S)
-LOGFILE="/temp/$0-$TIMESTAMP.log"
+LOGFILE="/temp/$O-$TIMESTAMP.log"
 
 echo "script strated executing at $TIMESTAMP" &>> $LOGFILE
 
@@ -28,6 +28,6 @@ else
   echo "you have root access"
 fi
 
-cp mongo.repo /etc/yum.repos.d/mongo.repo &>> $LOGFILE
+cp mongo.repo /home/centos/roboshop3-shell &>> $LOGFILE
 
 VALIDATE $? "copied mongodb repo"
