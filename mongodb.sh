@@ -8,7 +8,7 @@ Y="\e[33m"
 N="\e[0m"
 
 TIMESTAMP=$(date +%F-%H-%M-%S)
-LOGFILE="/temp/$O-$TIMESTAMP.log"
+LOGFILE="/temp/$O-TIMESTAMP.log"
 
 echo "script strated executing at $TIMESTAMP" &>> $LOGFILE
 
